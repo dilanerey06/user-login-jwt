@@ -1,0 +1,13 @@
+# Compiled class files
+/backend/target/
+
+# Maven specific
+/backend/.mvn/
+/backend/pom.xml.tag
+/backend/pom.xml.releaseBackup
+/backend/pom.xml.versionsBackup
+/backend/dependency-reduced-pom.xml
+
+# IDE-Specific
+/backend/.idea/
+/backend/.vscode/

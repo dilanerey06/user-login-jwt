@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="loginPanel">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="loginUser" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="loginUser" required>
+                </div>
+                <div class="mb-3">
+                    <label for="loginPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+            <p id="loginMessage" class="text-muted mt-3"></p>
+            <button id="showRegister" class="btn btn-link mt-3">¿No tienes cuenta? Regístrate</button>
+        </div>
+        
+        <div id="registerPanel" style="display: none;">
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <div class="mb-3">
+                    <label for="registerName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="registerName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="registerDocumentType" class="form-label">Tipo de Documento</label>
+                    <select class="form-control" id="registerDocumentType" required>
+                        <option value="5">Cédula</option>
+                        <option value="6">Tarjeta</option>
+                        <option value="7">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="registerDocumentNumber" class="form-label">Número de Documento</label>
+                    <input type="text" class="form-control" id="registerDocumentNumber" required>
+                </div>
+                <div class="mb-3">
+                    <label for="registerEmail" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="registerEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="registerUsername" class="form-label">Nombre de Usuario</label>
+                    <input type="text" class="form-control" id="registerUsername" required>
+                </div>
+                <div class="mb-3">
+                    <label for="registerPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="registerPassword" required>
+                </div>
+                <p id="registerMessage" class="text-muted mt-3"></p>
+                <button type="submit" class="btn btn-success">Registrarse</button>
+                
+            </form>
+            <button id="showLogin" class="btn btn-link mt-3">¿Ya tienes cuenta? Inicia sesión</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
